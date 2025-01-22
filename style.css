@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'sf pro display';
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#home{
+    height:100vh;
+    width:100%;
+    background-color: #fff;
+}
+#home #nav{
+     height:80px;
+     width:100%;
+     /* background-color:lightblue; */
+     display:flex;
+     justify-content: space-between;
+     align-items:center;
+     padding:0 25px;
+     cursor:pointer;
+     padding-bottom: 10px;
+     padding-right: 35px;
+}
+#nav #left{
+    display:flex;
+    align-items:center;
+}
+#nav #right{
+    display:flex;
+    align-items: center;
+    gap:15px;
+    padding-right: 30px;
+}
+#left svg{
+    height:40px;
+}
+#home #nav #left p{
+    margin-left:-40px;
+    font-weight: 200; 
+    opacity: 0.7;
+    font-size:17px;
+    margin-top: -0.8px;
+}
+#home #nav #left p span{
+    margin-left: 5px;
+    margin-top: 5px;
+    /* background-color: red; */
+}
+#right h3{
+    font-weight: 350;
+    font-size:18px;
+    opacity:0.7;
+}
+#right button{
+    padding:6px 16px;
+    border-radius: 17px;
+    font-size:17px;
+    background-color:#184655;
+    color:#fff;
+    font-weight: 250;
+    cursor:pointer;
+}
+#hero{
+    height:calc(100% - 90px);
+    width:93%;
+    /* background-color: red; */
+    margin-left: 3.5%;
+    border-radius:15px;
+    background-image:url('/assests/background.png');
+    background-size: cover;
+    display:flex;
+
+}
+#hero #left{
+    height:100%;
+    width:55%;
+    /* background-color: red; */
+    padding-left: 110px;
+
+}
+#hero #right{
+    height:100%;
+    width:45%;
+    /* background-color: green; */
+}
+#left h1{
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing:-0.5px;
+    margin-top: 21%;
+    line-height: 1.2;
+    margin-bottom: 13px;
+    color: #184655;
+
+}
+#left input{
+    height:70px;
+    width:310px;
+    border:none;
+    border-radius:15px 0 0 15px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 28px;
+    margin-top: 20px;
+}
+#left button{
+    padding: 22px 60px;
+    border-radius: 0 15px 15px 0;
+    background-color: #184655;
+    color:#fff;
+    margin-left: -4px;
+    margin-top:-15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 550;
+    border: none;
+}
+#left p{
+    margin-left: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    color:#184655;
+    opacity: 0.7;
+}
+#left #hashtags span{
+    margin-right: 30px;
+}
+#right img{
+    margin-top: 15%;
+}
+#page2{
+    height:100vh;
+    width:100%;
+    position: relative;
+}
+#page2 #top{
+    height:46%;
+    width:93%;
+    border-radius:15px;
+    margin-left: 3.5%;
+    background-color: #E3EADE;
+    margin-top:10px;
+    display: flex;
+}
+#page2 #cards{
+    height:50%;
+    width: 93%;
+    margin-left: 3.5%;
+    /* background-color: green; */
+    border-radius: 15px;
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+#page2 #topleft{
+    height:100%;
+    width:50%;
+    /* background-color:gold; */
+    border-radius: 15px 0 0 15px;
+    padding:7px 0;
+    padding-left: 20px;
+}
+#page2 #topright{
+    height:100%;
+    width:50%;
+    /* background-color:blue; */
+    border-radius: 0 15px 15px 0;
+}
+#page2 #topleft img{
+    border-radius: 10px;
+    margin-top: 4.5px;
+}
+#page2 #topright h1{
+    margin-top: 20px;
+    font-weight:500;
+    color:#184655;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+#page2 #topright p{
+    font-size: 17px;
+    font-weight: 180;
+    opacity: 0.7;
+}
+#page2 #cards .card{
+    height: 100%;
+    width:31.5%;
+    border-radius: 15px;
+    /* background-color: red; */
+    border:1px solid #184655;
+}
+#cards .card img{
+    height:70%;
+    width:100%;
+    object-fit:cover;
+    border-radius:15px 15px 15px 15px;
+}
+#cards .card h3{
+    padding-left: 12px;
+    font-weight: 500;
+    font-size:22px;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    color: #184655;
+}
+#cards .card p{
+    padding-left: 12px;
+    font-weight: 180;
+    opacity: 0.7;
+    font-size: 15px;
+    width:96%;
+}
+#last{
+    height: 80vh;
+    width:93%;
+    margin-left: 3.5%;
+    margin-top: 30px;
+    background-image: url('/assests/background.png');
+    background-size:cover;
+    margin-bottom: 60px;
+    display: flex;
+    border-radius: 15px;
+}
+#last #lastleft{
+    width:55%;
+    height:100%;
+    /* background-color: red; */
+    padding-left: 50px;
+}
+#last #lastright{
+    width:45%;
+    height:100%;
+    /* background-color: blue; */
+}
+#last #lastleft h1{
+    padding-left: 100px;
+    font-weight: 400;
+    font-size: 38px;
+    margin-top: 20%;
+}
+#last #lastleft h1 span{
+   font-size: 55px;
+   font-weight: 500;
+}
+#last #lastleft button{
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 7px 12px;
+    color:#fff;
+    background-color: #184655;
+    border-radius: 18px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    width:220px;
+}
+#last #lastright img{
+    margin-top: 21%;
+    margin-left: -50px;
+}
+#footer{
+    height:5px;
+    width:100%;
+}
+
